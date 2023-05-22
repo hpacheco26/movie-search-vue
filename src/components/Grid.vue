@@ -33,16 +33,7 @@ export default {
        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
        gap: 50px;
        margin:50px;
-       overflow: auto;
        padding: 0px 30px;
-        /* flex-direction: column; */
-        /* flex:1; */
-        /* flex-wrap: wrap;
-        display: flex;
-        overflow: auto;
-        background-color:#060d17;
-        padding: 0 25px 25px 25px;
-        justify-content: center; */
     }
 
 

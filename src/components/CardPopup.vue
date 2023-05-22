@@ -15,7 +15,7 @@
                     <div class="info">Awards: {{ movifystore.infodetail.Awards }}</div>
 
                 </div>
-                <Button buttontext="X" buttontype="close" @click="this.movifystore.triggerPopup()"></Button>
+                <Button class="close-button" buttontext="X" buttontype="close" @click="this.movifystore.triggerPopup()"></Button>
             </div>
             <div class="bottom-section">
                 <div class="plot-section">
@@ -59,16 +59,12 @@ export default {
     right: 0;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.6);
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-
-
     .popup-inner {
         background-color: #E7E8D1;
-        // background-color: #A7BEAE;
         width: 800px;
         height: 50%;
         padding: 32px;
@@ -81,16 +77,36 @@ export default {
             display: flex;
             flex-direction: row;
 
-        }
+            .poster-section {
+                width: 165px;
+                height: 250px;
 
-        .poster-section {
-            width: 165px;
-            height: 250px;
-        }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
 
-        .info-section {
-            margin: 0px 20px;
-            color: #282b47;
+            .info-section {
+                margin: 0px 20px;
+                color: #282b47;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+                .info{
+                    margin: 4px;
+                }
+            }
+
+            .close-button {
+                align-self: flex-start;
+                translate: 15px -15px;
+            }
         }
 
         .bottom-section {
@@ -100,11 +116,9 @@ export default {
 
             .plot-section {
                 margin: 20px 0px;
-                flex:1;
+                flex: 1;
             }
         }
-
-
     }
 }
 </style>

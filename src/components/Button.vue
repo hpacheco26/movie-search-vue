@@ -30,8 +30,7 @@
         font-weight: bold;
         background-color: transparent;
         border: none;
-        align-self: flex-start;
-        translate: 15px -15px;
+        
         font-size: 20px
         
     }
