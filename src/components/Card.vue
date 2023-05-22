@@ -39,6 +39,7 @@ export default {
     methods:{
         async infoClick(imdbId){
             const response = await fetchMovieDetail(imdbId)
+            console.log(response)
             this.movifystore.infodetail = response
             this.movifystore.triggerPopup()
         }
